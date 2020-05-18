@@ -71,3 +71,84 @@ img {
     transition: box-shadow .3s; }
     .site-header__intro-button:hover {
       box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6); }
+
+.site-main__image {
+  padding: 50px; }
+
+.site-main__counters {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 75px; }
+  .site-main__counters-item {
+    align-self: center; }
+    .site-main__counters-item-image {
+      width: 32px;
+      height: 28px; }
+    .site-main__counters-item-header {
+      font-size: 6rem;
+      line-height: 0; }
+    .site-main__counters-item-info {
+      color: #aaa;
+      font-size: 1.5rem; }
+
+.site-main__features-wrapper {
+  margin-top: 0; }
+  .site-main__features-wrapper--blue {
+    background-color: #f5faff; }
+
+.site-main__features-wave--top {
+  display: block;
+  width: 100vw; }
+
+.site-main__features-wave--bottom {
+  display: block;
+  width: 100vw;
+  margin-top: -5px; }
+
+.site-main__features svg {
+  display: block;
+  width: 100vw;
+  background-color: #fff; }
+
+.site-main__features-item {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0; }
+  .site-main__features-item-illustration {
+    align-self: center;
+    width: 65%;
+    height: 65%; }
+  .site-main__features-item-header {
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 0;
+    padding-top: 100px; }
+  .site-main__features-item-paragraph {
+    font-size: 1.6rem;
+    padding: 0 50px 50px 50px; }
+
+.site-main__cta {
+  padding-bottom: 150px; }
+  .site-main__cta-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem; }
+  .site-main__cta-button {
+    display: block;
+    margin: 50px auto 0;
+    background-color: #ff52bf;
+    border: none;
+    border-radius: 24px;
+    color: #f5faff;
+    padding: 14px 40px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    transition: box-shadow .3s; }
+    .site-main__cta-button:hover {
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6); }

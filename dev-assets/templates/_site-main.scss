@@ -1,0 +1,116 @@
+.site-main {
+    &__image {
+        padding: $gutter;
+    }
+
+    &__counters {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: $gutter*1.5;
+
+        &-item {
+            align-self: center;
+
+            &-image {
+                width: 32px;
+                height: 28px;
+            }
+
+            &-header {
+                font-size: 6rem;
+                line-height: 0;
+            }
+
+            &-info {
+                color: #aaa;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__features {
+        &-wrapper {
+            margin-top: 0;
+
+            &--blue {
+                background-color: $paleBlue;
+            }
+        }
+
+        &-wave {
+            &--top {
+                display: block;
+                width: 100vw;
+            }
+
+            &--bottom {
+                display: block;
+                width: 100vw;
+                margin-top: -5px;
+            }
+        }
+
+        svg {
+            display: block;
+            width: 100vw;
+            background-color: #fff;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            padding: $gutter*2 0;
+
+            &-illustration {
+                align-self: center;
+                width: 65%;
+                height: 65%;
+            }
+
+            &-header {
+                align-self: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 0;
+                padding-top: $gutter*2;
+            }
+
+            &-paragraph {
+                font-size: 1.6rem;
+                padding: 0 $gutter $gutter $gutter;
+            }
+        }
+    }
+
+    &__cta {
+        padding-bottom: $gutter*3;
+
+        &-header {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.4rem;
+        }
+
+        &-button {
+            display: block;
+            margin: $gutter auto 0;
+            background-color: $primaryColor;
+            border: none;
+            border-radius: 24px;
+            color: $paleBlue;
+            padding: 14px 40px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: .8px;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+            transition: box-shadow .3s;
+
+            &:hover {
+                box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+}
