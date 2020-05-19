@@ -16,18 +16,6 @@ body {
 img {
   max-width: 100%; }
 
-.u-primary {
-  color: #ff52bf; }
-
-.u-white {
-  color: white; }
-
-.u-dark-cyan {
-  color: #00252e; }
-
-.u-text-center {
-  text-align: center; }
-
 .site-header__nav {
   margin: 25px;
   display: flex;
@@ -83,6 +71,11 @@ img {
   flex-direction: column;
   justify-content: space-between;
   margin: 75px 0; }
+  @media (min-width: 640px) {
+    .site-main__counters {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 50px; } }
   .site-main__counters-item {
     align-self: center;
     padding-bottom: 50px; }
@@ -150,20 +143,44 @@ img {
   display: flex;
   flex-direction: column;
   padding: 100px 0; }
+  @media (min-width: 860px) {
+    .site-main__features-item {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 50px 75px; } }
   .site-main__features-item-illustration {
     align-self: center;
     width: 65%;
     height: 65%; }
-  .site-main__features-item-header {
+    @media (min-width: 860px) {
+      .site-main__features-item-illustration {
+        width: 45%;
+        height: 45%;
+        margin-right: 50px; } }
+  .site-main__features-item-info {
     align-self: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 0;
-    padding-top: 75px; }
-  .site-main__features-item-paragraph {
-    font-size: 1.6rem;
-    padding: 0 50px; }
+    display: flex;
+    flex-direction: column; }
+    .site-main__features-item-info-header {
+      align-self: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 0;
+      padding-top: 75px; }
+      @media (min-width: 860px) {
+        .site-main__features-item-info-header {
+          align-self: flex-start; } }
+    .site-main__features-item-info-paragraph {
+      font-size: 1.6rem;
+      padding: 0 50px;
+      text-align: center; }
+      @media (min-width: 860px) {
+        .site-main__features-item-info-paragraph {
+          padding: 0;
+          padding-right: 40px;
+          font-size: 1.2rem;
+          text-align: left; } }
 
 .site-main__cta {
   padding-bottom: 250px; }
@@ -296,3 +313,19 @@ img {
       .site-footer__copyrights-info a {
         color: #ff52bf;
         text-decoration: none; }
+
+.u-primary {
+  color: #ff52bf; }
+
+.u-white {
+  color: white; }
+
+.u-dark-cyan {
+  color: #00252e; }
+
+.u-text-center {
+  text-align: center; }
+
+@media (min-width: 860px) {
+  .u-flex-row {
+    flex-direction: row; } }

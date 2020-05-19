@@ -1,0 +1,5 @@
+.u-flex-row {
+    @include medium-up {
+        flex-direction: row;
+    }
+}

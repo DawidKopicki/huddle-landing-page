@@ -11,6 +11,12 @@
         justify-content: space-between;
         margin: $gutter*1.5 0;
 
+        @include small-up {
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 $gutter;
+        }
+
         &-item {
             align-self: center;
             padding-bottom: $gutter;
@@ -113,24 +119,55 @@
             flex-direction: column;
             padding: $gutter*2 0;
 
+            @include medium-up {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding: $gutter $gutter*1.5;
+            }
+
             &-illustration {
                 align-self: center;
                 width: 65%;
                 height: 65%;
+
+                @include medium-up {
+                    width: 45%;
+                    height: 45%;
+                    margin-right: $gutter;
+                }
             }
 
-            &-header {
+            &-info {
                 align-self: center;
-                font-family: 'Poppins', sans-serif;
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 0;
-                padding-top: $gutter*1.5;
-            }
+                display: flex;
+                flex-direction: column;
 
-            &-paragraph {
-                font-size: 1.6rem;
-                padding: 0 $gutter;
+                &-header {
+                    align-self: center;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    line-height: 0;
+                    padding-top: $gutter*1.5;
+
+                    @include medium-up {
+                        align-self: flex-start;
+                    }
+                }
+
+                &-paragraph {
+                    font-size: 1.6rem;
+                    padding: 0 $gutter;
+                    text-align: center;
+
+
+                    @include medium-up {
+                        padding: 0;
+                        padding-right: 40px;
+                        font-size: 1.2rem;
+                        text-align: left;
+                    }
+                }
             }
         }
     }
