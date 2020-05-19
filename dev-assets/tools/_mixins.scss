@@ -19,13 +19,6 @@
     }
 }
 
-// From extra medium
-@mixin extra-medium-up {
-    @media (min-width: #{$bp-xm}) {
-        @content
-    }
-}
-
 // From medium
 @mixin medium-up {
     @media (min-width: #{$bp-m}) {

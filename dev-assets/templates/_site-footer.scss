@@ -7,6 +7,13 @@
         background-color: $darkCyan;
         padding: $gutter/1.5;
         color: white;
+
+        @include medium-up {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: $gutter/1.5 $gutter*2;
+
+        }
     }
 
     &__wave {
@@ -39,14 +46,31 @@
     &__section {
         display: flex;
         flex-direction: column;
+        z-index: 1;
+
+        @include medium-up {
+            width: 40%;
+        }
 
         &-logo {
             display: flex;
             align-items: center;
             margin-top: $gutter;
+            z-index: 1;
+
+            @include medium-up {
+                margin-top: 0;
+            }
 
             &-icon {
                 color: #fff;
+                // z-index: 1;
+
+
+                @include medium-up {
+                    width: 34px;
+                    height: 28px;
+                }
             }
 
             &-text {
@@ -54,11 +78,20 @@
                 font-size: 4.5rem;
                 font-family: 'Poppins', sans-serif;
                 line-height: 0;
+
+                @include medium-up {
+                    font-size: 3rem;
+                }
             }
         }
 
         &-paragraph {
             font-size: 1.4rem;
+
+            @include medium-up {
+                font-size: 1.2rem;
+                padding-right: 20px;
+            }
         }
 
         &-header {
@@ -66,6 +99,7 @@
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1px;
+            line-height: 0;
         }
 
         &-contact {
@@ -78,8 +112,17 @@
                 padding: 10px 0;
                 font-size: 1.6rem;
 
+                @include medium-up {
+                    font-size: 1.2rem;
+                }
+
                 img {
                     margin-right: 20px;
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
                 }
             }
         }
@@ -90,12 +133,21 @@
             align-items: flex-end;
             margin-bottom: $gutter;
 
+            @include medium-up {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
             &-input {
                 display: block;
                 width: 100%;
-                padding: 15px;
+                padding: 10px;
                 border: 1px solid $darkCyan;
                 border-radius: 5px;
+
+                @include medium-up {
+                    width: 70%;
+                }
             }
 
             &-button {
@@ -109,7 +161,17 @@
                 font-weight: 700;
                 font-family: 'Poppins', sans-serif;
                 letter-spacing: 1px;
+                cursor: pointer;
                 transition: .3s;
+
+                @include medium-up {
+                    margin-top: 0;
+                    padding: 8px 20px;
+                    align-items: flex-start;
+                    font-size: 1.2rem;
+                    margin-left: 15px;
+                }
+
 
                 &:hover {
                     background-color: $primaryColorHover;
@@ -124,6 +186,11 @@
         font-size: 1.2rem;
         background-color: $darkCyan;
         color: white;
+
+        @include medium-up {
+            padding: 0 $gutter*2 $gutter $gutter*2;
+            margin-top: -5px;
+        }
 
         i {
             margin-right: 15px;
@@ -150,6 +217,10 @@
             a {
                 color: $primaryColor;
                 text-decoration: none;
+
+                &:hover {
+                    font-weight: 700;
+                }
             }
         }
     }
