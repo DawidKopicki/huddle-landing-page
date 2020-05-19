@@ -26,6 +26,7 @@
             &-info {
                 color: #aaa;
                 font-size: 1.5rem;
+                text-align: center;
             }
         }
     }
@@ -91,6 +92,8 @@
         &-header {
             font-family: 'Poppins', sans-serif;
             font-size: 2.4rem;
+            padding-left: $gutter;
+            padding-right: $gutter;
         }
 
         &-button {

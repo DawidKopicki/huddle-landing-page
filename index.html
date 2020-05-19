@@ -7,6 +7,7 @@
     <title>Huddle - Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -86,29 +87,45 @@
     </main>
     <footer class="site-footer">
         <img class="site-footer__wave" src="images/bg-footer-top-mobile.svg" alt="">
-        <div class="site-footer__section">
-            <img class="site-footer__section-logo" src="images/logo.svg" alt="Huddle logo white">
-            <p class="site-footer__section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                nulla quam, hendrerit lacinia
-                vestibulum a, ultrices quis sem.</p>
-            <ul class="site-footer__section-list">
-                <li class="site-footer__section-list-item">Phone: +1-543-123-4567</li>
-                <li class="site-footer__section-list-item">example@huddle.com</li>
-            </ul>
-        </div>
-        <div class="site-footer__section">
-            <h3 class="site-footer__section-header">Newsletter</h3>
-            <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-                send you spam or pass on your email address</p>
-            <form action="#">
-                <input class="site-footer__section-form-input" type="text">
-                <button class="site-footer__form-button">Subscribe</button>
-            </form>
+        <div class="site-footer__wrapper">
+            <div class="site-footer__section">
+                <div class="site-footer__section-logo">
+                    <img class="site-footer__section-logo-icon" src="images/icon-messages-white.png"
+                        alt="Huddle logo white">
+                    <h2 class="site-footer__section-logo-text">Huddle</h2>
+                </div>
+                <p class="site-footer__section-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+                    vestibulum a, ultrices quis sem.
+                </p>
+                <div class="site-footer__section-contact">
+                    <div class="site-footer__section-contact-item"><img src="images/icon-phone.svg"
+                            alt=""><span>Phone:+1-543-123-4567</span></div>
+                    <div class="site-footer__section-contact-item"><img src="images/icon-email.svg"
+                            alt=""><span>example@huddle.com</span></div>
+                </div>
+            </div>
+            <div class="site-footer__section">
+                <h3 class="site-footer__section-header">Newsletter</h3>
+                <p class="site-footer__section-paragraph">To recieve tips on how to grow your community, sign up to our
+                    weekly newsletter. We’ll never
+                    send you spam or pass on your email address</p>
+                <form action="#" class="site-footer__section-form">
+                    <input class="site-footer__section-form-input" type="text">
+                    <button class="site-footer__section-form-button">Subscribe</button>
+                </form>
+            </div>
         </div>
         <div class="site-footer__social-icons">
-            <img class="site-footer__section-icons-item" src="" alt="">
-            <img class="site-footer__section-icons-item" src="" alt="">
-            <img class="site-footer__section-icons-item" src="" alt="">
+            <i class="fab fa-facebook-square fa-2x"> </i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+        </div>
+        <div class="site-footer__copyrights">
+            <p class="site-footer__copyrights-info">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/DawidKopicki" target="_blank">Dawid Kopicki</a>.
+            </p>
         </div>
     </footer>
 </body>
