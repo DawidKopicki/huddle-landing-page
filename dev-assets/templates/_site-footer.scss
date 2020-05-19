@@ -11,8 +11,28 @@
 
     &__wave {
         position: absolute;
-        top: -$gutter;
+        top: -40px;
         width: 100vw;
+
+        @include xx-small-up {
+            top: -$gutter;
+        }
+
+        @include extra-small-up {
+            top: -$gutter*1.3;
+        }
+
+        @include small-up {
+            top: -$gutter*1.775;
+        }
+
+        @include medium-up {
+            top: -$gutter*2;
+        }
+
+        @include large-up {
+            top: -$gutter*2.75;
+        }
     }
 
 
@@ -97,8 +117,6 @@
                 }
             }
         }
-
-
     }
 
     &__social-icons {

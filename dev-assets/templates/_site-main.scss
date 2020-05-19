@@ -38,6 +38,28 @@
             &--blue {
                 background-color: $paleBlue;
             }
+
+            &-bottom-wave {
+                &--mobile {
+                    display: block;
+                    width: 100vw;
+                    background-color: #fff;
+
+                    @include xx-small-up {
+                        display: none;
+                    }
+                }
+
+                &--desktop {
+                    display: none;
+
+                    @include xx-small-up {
+                        display: block;
+                        width: 100vw;
+                        background-color: #fff;
+                    }
+                }
+            }
         }
 
         &-wave {
@@ -51,12 +73,6 @@
                 width: 100vw;
                 margin-top: -5px;
             }
-        }
-
-        svg {
-            display: block;
-            width: 100vw;
-            background-color: #fff;
         }
 
         &-item {
