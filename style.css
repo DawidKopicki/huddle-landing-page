@@ -74,16 +74,18 @@ img {
       box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6); }
 
 .site-main__image {
-  padding: 50px; }
+  padding: 50px;
+  padding-top: 0; }
 
 .site-main__counters {
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 75px; }
+  margin: 75px 0; }
   .site-main__counters-item {
-    align-self: center; }
+    align-self: center;
+    padding-bottom: 50px; }
     .site-main__counters-item-image {
       width: 32px;
       height: 28px; }
@@ -114,14 +116,35 @@ img {
         width: 100vw;
         background-color: #fff; } }
 
-.site-main__features-wave--top {
+.site-main__features-wave--top-mobile {
   display: block;
   width: 100vw; }
+  @media (min-width: 375px) {
+    .site-main__features-wave--top-mobile {
+      display: none; } }
 
-.site-main__features-wave--bottom {
+.site-main__features-wave--top-desktop {
+  display: none; }
+  @media (min-width: 375px) {
+    .site-main__features-wave--top-desktop {
+      display: block;
+      width: 100vw; } }
+
+.site-main__features-wave--bottom-mobile {
   display: block;
   width: 100vw;
   margin-top: -5px; }
+  @media (min-width: 375px) {
+    .site-main__features-wave--bottom-mobile {
+      display: none; } }
+
+.site-main__features-wave--bottom-desktop {
+  display: none; }
+  @media (min-width: 375px) {
+    .site-main__features-wave--bottom-desktop {
+      display: block;
+      width: 100vw;
+      margin-top: -5px; } }
 
 .site-main__features-item {
   display: flex;
@@ -137,13 +160,13 @@ img {
     font-size: 2rem;
     font-weight: 700;
     line-height: 0;
-    padding-top: 100px; }
+    padding-top: 75px; }
   .site-main__features-item-paragraph {
     font-size: 1.6rem;
-    padding: 0 50px 50px 50px; }
+    padding: 0 50px; }
 
 .site-main__cta {
-  padding-bottom: 150px; }
+  padding-bottom: 250px; }
   .site-main__cta-header {
     font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
