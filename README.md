@@ -2,7 +2,7 @@
 
 Used technologies:
 - HTML5
-- CSS3
+- CSS3 + SASS
 - Flexbox
 - Gulp.js
 
