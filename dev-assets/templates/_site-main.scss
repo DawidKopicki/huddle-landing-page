@@ -51,7 +51,7 @@
                 &--mobile {
                     display: block;
                     width: 100vw;
-                    background-color: #fff;
+                    background-color: $white;
 
                     @include xx-small-up {
                         display: none;
@@ -64,7 +64,7 @@
                     @include xx-small-up {
                         display: block;
                         width: 100vw;
-                        background-color: #fff;
+                        background-color: $white;
                     }
                 }
             }
@@ -185,15 +185,9 @@
         &-button {
             display: block;
             margin: $gutter auto 0;
-            background-color: $primaryColor;
-            border: none;
-            border-radius: 24px;
-            color: $paleBlue;
             padding: 14px 40px;
             font-size: 1.15rem;
-            font-weight: 700;
             letter-spacing: .8px;
-            cursor: pointer;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
             transition: box-shadow .3s;
 

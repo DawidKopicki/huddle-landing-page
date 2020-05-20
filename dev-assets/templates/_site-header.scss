@@ -10,18 +10,15 @@
         }
 
         &-button {
-            background-color: white;
+            background-color: $white;
             border: 1px solid $primaryColor;
-            border-radius: 24px;
             color: $primaryColor;
             font-size: 1.1rem;
             padding: 6px 21px;
-            cursor: pointer;
             box-shadow: 0px 0px 5px 0px rgba(255, 81, 191, 0.6);
-            transition: .3s;
 
             &:hover {
-                color: white;
+                color: $white;
                 background-color: $primaryColor;
             }
         }
@@ -64,15 +61,9 @@
         &-button {
             display: block;
             margin: $gutter auto 0;
-            background-color: $primaryColor;
-            border: none;
-            border-radius: 24px;
-            color: $paleBlue;
             padding: 14px 40px;
             font-size: 1.15rem;
-            font-weight: 700;
             letter-spacing: .8px;
-            cursor: pointer;
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
             transition: box-shadow .3s;
 
