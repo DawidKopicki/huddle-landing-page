@@ -59,11 +59,10 @@ button {
 
 .site-header__intro {
   margin: 100px 50px; }
-  .site-header__intro-head-text {
-    font-family: 'Poppins', sans-serif;
+  .site-header__intro-header {
     font-size: 2.4rem; }
     @media (min-width: 860px) {
-      .site-header__intro-head-text {
+      .site-header__intro-header {
         font-size: 3rem; } }
   .site-header__intro-text {
     font-size: 1.6rem; }
@@ -91,11 +90,17 @@ button {
       box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.6); }
 
 .site-main__image {
+  display: block;
   padding: 50px;
-  padding-top: 0; }
+  padding-top: 0;
+  margin: 0 auto; }
+  @media (min-width: 640px) {
+    .site-main__image {
+      width: 75%;
+      height: 75%; } }
 
 .site-main__counters {
-  height: 70vh;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -192,7 +197,6 @@ button {
     flex-direction: column; }
     .site-main__features-item-info-header {
       align-self: center;
-      font-family: 'Poppins', sans-serif;
       font-size: 2.2rem;
       font-weight: 700;
       line-height: 0;
@@ -214,7 +218,6 @@ button {
 .site-main__cta {
   padding-bottom: 250px; }
   .site-main__cta-header {
-    font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
     padding-left: 50px;
     padding-right: 50px; }
@@ -283,7 +286,6 @@ button {
       .site-footer__section-logo-text {
         margin-left: 10px;
         font-size: 4.5rem;
-        font-family: 'Poppins', sans-serif;
         line-height: 0; }
         @media (min-width: 860px) {
           .site-footer__section-logo-text {
@@ -380,6 +382,9 @@ button {
 
 .u-text-center {
   text-align: center; }
+
+.u-text-poppins {
+  font-family: 'Poppins', sans-serif; }
 
 @media (min-width: 860px) {
   .u-flex-row {

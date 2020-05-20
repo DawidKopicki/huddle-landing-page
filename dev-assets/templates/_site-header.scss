@@ -27,8 +27,7 @@
     &__intro {
         margin: $gutter*2 $gutter;
 
-        &-head-text {
-            font-family: 'Poppins', sans-serif;
+        &-header {
             font-size: 2.4rem;
 
             @include medium-up {
@@ -54,8 +53,6 @@
             @include extra-large-up {
                 padding: 0 $gutter*6;
             }
-
-
         }
 
         &-button {
